@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+  }
+  .card {
+    width: 400px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    margin: 10px;
+  }
+  
+  .card .card--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card .name {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  .form input {
+    border: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+  }
+  
+  .pay {
+    padding: 10px 50px;
+    border: none;
+    background-color: turquoise;
+    margin-top: 10px;
+  }
+  
+  .rotate {
+    /* transform: rotateX(180deg); */
+  }
+  
+
+  /* styles.css */
+
+.card {
+    width: 300px;
+    height: 180px;
+    background: linear-gradient(to top, black, rgb(255, 255, 255));
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .card.rotate {
+    transform: rotateY(180deg);
+  }
+  
+  .card--content {
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .card h2 {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 5px;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .name h4 {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  
